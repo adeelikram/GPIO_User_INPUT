@@ -1,3 +1,4 @@
+#use board sheme of gpio.board
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11,GPIO.OUT)
@@ -9,7 +10,7 @@ print(" GPIO mode Board scheme")
 print("\t1 2\n\t3 4\n\t5 6")
 print("   GPIO 7 8\n\t9 10\n  GPIO 11 12 GPIO\n       13 14\n  GPIO 15 16 GPIO")
 print("       17 18 GPIO\n  GPIO 19 20\n")
-
+#sentinaled contrlloed loop for user inputt
 
 while i==0: 
    print("1.Led 1 on\n2.Led 2 on\n3.Led 3 on\n4.Led 4 on\n5.close desired led\n6.exit")
